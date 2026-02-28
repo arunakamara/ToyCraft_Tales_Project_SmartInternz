@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>About ToyCraft Tales</h1>
+
+<div class="about-section">
+    <img src="{{ url_for('static', filename='images/about.webp') }}" alt="About Toy Industry" class="about-image">
+
+    <div class="about-text">
+        <p>
+        ToyCraft Tales is a data visualization project built using Tableau
+        to explore toy manufacturer trends across US states from 2005 to 2016.
+        </p>
+
+        <p>
+        The dataset was sourced from Kaggle and analyzed to uncover growth patterns,
+        geographic distribution, and industry insights.
+        </p>
+
+        <h3>Technologies Used:</h3>
+        <ul>
+            <li>Tableau</li>
+            <li>Flask</li>
+            <li>HTML & CSS</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
